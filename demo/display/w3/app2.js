@@ -67,8 +67,22 @@ if (IceCreamYummy = false) {
     showOnPage("Its yummy!")
 }
 
-let chocCream = Yummy(1)
-let pistachioCream = Yummy(1)
 
-showOnPage(chocCream)
-showOnPage(pistachioCream)
+
+showOnPage("------------")
+
+
+let weather = function (farenheit) {
+    let celcius = (farenheit - 32) * 5/9
+    return celcius
+}
+
+let heat = weather(10)
+
+if (heat >= 60) {
+    showOnPage("Its hot enough for Ice Cream.")
+} else {
+    showOnPage("Its too cold!")
+}
+
+showOnPage(heat)
