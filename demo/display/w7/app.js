@@ -55,11 +55,17 @@ return myChoice;
 
 let decideShop = whatShop()
 
-let showMyButton = document.createElement('button')
 
-    showMyButton.innerHTML = 'What Cream Shop?'
 
-    document.body.appendChild(showMyButton)
+document.querySelector('button').addEventListener('click', function() {
+const newParagraph = document.createElement('p')
+newParagraph.textContent = (decideShop)
+document.querySelector('body').appendChild(newParagraph)
+})
 
-    showMyButton.addEventListener('click', function () { alert(`I'm eating at ${decideShop} today!`)
-    })
+
+document.querySelector('button').addEventListener('click', function (e) { 
+
+    e.target.textContent = "I've been clicked!" 
+
+}) 
