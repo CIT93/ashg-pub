@@ -17,23 +17,34 @@
           <textarea name="post" id="input" cols="20" rows="5"></textarea>
           <br> <br>
           <div id="msg"></div>
-          <button type="submit">Post</button>
+          <button type="submit">Enter
+          </button>
+          <span idd="outputName">____</span>
         </form>
       </div>  
-
+      <script>
+        document.getElementById("name").onclick = function(){
+       document.getElementById("outputName").innerText = name;
+     }
+       </script>
       <div class="bottom"></div>
       <div class="bottom">
         <h3>Here's the list of people!</h3>
-        <div id="posts"></div>
+        <div id="names"></div>
       </div>
-  
+      <script src="app.js"></script>
+      <script src="functions.js"></script>
     </div>
   </body> 
-  
   <style>
     body {background-color: powderblue;}
     h1   {color: blue;}
     p    {color: red;}
     </style>
-    
+
+<p>
+ <span id="outputName">____</span>
+</p>
+
+
 </html>
