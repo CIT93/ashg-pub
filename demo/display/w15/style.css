@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(80, 76, 76);
+  }
+  h1 {
+    text-align: center;
+    border-style: solid;
+    border-top: solid black 20px;
+    border-bottom: solid black 20px;
+    border-left: solid black 20px;
+    border-right: solid black 20px;
+    color: black;
+    background-color: darkred;
+    padding: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h2 {
+    border-style: solid;
+    text-align: center;
+    color: black;
+    background-color: darkred;
+    padding: 35px;
+    font-family: 'Cursive', sans-serif;
+  }
+
+  .button-todo {
+    color: rgb(0, 0, 0);
+    background-color: rgb(83, 61, 18);
+    border: solid rgb(138, 97, 44) 5px;
+    border-radius: 25px;
+    height: 70px;
+    width: 280px;
+    border-spacing: 30px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    margin: 0;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    cursor: pointer;
+  }
+  .column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  div.column-todo {
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 70px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  img {
+    width: 4in;
+    margin-right: 0.5in;
+  }
