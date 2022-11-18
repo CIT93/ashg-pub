@@ -9,11 +9,5 @@ const pulledTodos = document.querySelector('#pulledTodos');
     todos.forEach((todo) => {
     const createDiv = document.createElement('div');
     createDiv.innerHTML = `ID: ${todo.userId} -- Title: ${todo.title}`;
-    if (todo.completed) {
-        pulledTodos.appendChild(createDiv);
-    } else {
-        pulledTodos.appendChild(createDiv);
-    }
-      
-});}});});
-  
+    pulledTodos.appendChild(createDiv);
+      })}})})
