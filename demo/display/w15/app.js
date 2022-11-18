@@ -8,7 +8,7 @@ document.getElementById('pulltodos').addEventListener('click', (e) => {
 const pulledTodos = document.querySelector('#pulledTodos');
     todos.forEach((todo) => {
     const createDiv = document.createElement('div');
-    createDiv.innerHTML = `User ID: ${todo.userId} -- Title: ${todo.title}`;
+    createDiv.innerHTML = `ID: ${todo.userId} -- Title: ${todo.title}`;
     if (todo.completed) {
         pulledTodos.appendChild(createDiv);
     } else {
